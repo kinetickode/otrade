@@ -10,7 +10,7 @@ And, like any student of economics and life in general, I know I am NOT a genius
 and that the Efficient Market Hypothesis generally holds true, so these types of 
 programs are a waste of time, except for the value of the programming exercise.
 
-One thing I love about Python is the iterative development process which allow the
+One thing I love about Python is the iterative development process which allows the
 development of smaller working components that can be assembled into a larger whole.
 So starting with some simple functions that return values:
 
@@ -40,7 +40,14 @@ Then install the otrade package.
 ```bash
 git clone https://github.com/Kinetickode/otrade.git
 cd otrade
-./make.sh
+./install.sh
+```
+
+## Testing
+
+```bash
+cd otrade
+py.test
 ```
 
 ## Environment Variables
@@ -77,10 +84,10 @@ To get recent recent price direction for a stock:
 get_price_direction <Stock Symbol>
 ```
 
-For my own protection I am no-op'ing the Robinhood functions that execute trades 
-or change any account data.  I am doing this in the otrade package to save time, 
-though a better strategy would be to fork the robin-stocks package and remove the 
-functions.
+For my own protection I am no-op'ing the Robinhood functions that either execute 
+trades or changes any account data.  I am doing this in the otrade package to save 
+time, though a better strategy would be to fork the robin-stocks package and remove 
+the functions.
 
 
 ## Helpful Articles

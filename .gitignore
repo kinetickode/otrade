@@ -1,0 +1,8 @@
+__pycache__
+*/__pycache__
+build
+dist
+otrade.egg-info
+.DS_Store
+*/.DS_Store
+.env
